@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for person in object_list %}
+<p>{{person.id }}. &nbsp;Imie: {{ person.name }} &nbsp; &nbsp; Nazwisko: {{ person.surname }}</p>
+<p> Mobile: {{Mobile.mobile}} &nbsp; &nbsp; Email: {{ email.email }} </p>
+{% endfor %}
+
+{% endblock %}
