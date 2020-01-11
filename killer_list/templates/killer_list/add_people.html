@@ -4,6 +4,8 @@
 <form action="." method="POST">
     {%csrf_token%}
     {{ form.as_p }}
+    {{ mobile_form }}
+    {{ email_form }}
     <button type="submit">Add Person!</button>
 </form>
 
